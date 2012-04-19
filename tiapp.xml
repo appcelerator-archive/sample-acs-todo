@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">XKBRZjPjco9iiCJbWgfluBhV4vkXyR7F</property>
+    <property name="acs-oauth-key-production" type="string">INbdiYGIZJj3CzTbeMOZdhz8kGRCvN5n</property>
+    <property name="acs-api-key-production" type="string">qCeoROUYUCxjf2L7pakvo65iKvIWiIVr</property>
+    <property name="acs-oauth-secret-development" type="string">YJVsCnKLhZQPgccPnrkScTnBCGfiWzW8</property>
+    <property name="acs-oauth-key-development" type="string">XZulGbv3wHP0m3ooU8uYYZdWv3q9ZmfI</property>
+    <property name="acs-api-key-development" type="string">G4rsTfkRpezNXGR2j1IgOraWpWfwe8I7</property>
+    <deployment-targets>
+        <target device="mobileweb">false</target>
+        <target device="iphone">true</target>
+        <target device="ipad">true</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>2.0.1.GA2</sdk-version>
+    <id>com.appcelerator.acstodo</id>
+    <name>ACS Todo</name>
+    <version>1.0</version>
+    <publisher>masuidrive</publisher>
+    <url>http://appcelerator.com</url>
+    <description>not specified</description>
+    <copyright>2012 by masuidrive</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>30fa7014-5b6c-4f2a-9752-be11528e82d7</guid>
+    <property name="ti.ui.defaultunit">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs" version="2.0.1">ti.cloud</module>
+    </modules>
+</ti:app>
